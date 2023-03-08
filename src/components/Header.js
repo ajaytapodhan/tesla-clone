@@ -72,6 +72,7 @@ top :0;
 left:0;
 right:0;
 z-index:1
+
 `;
 const Menu = styled.div`
   display: flex;
@@ -112,7 +113,7 @@ const Burgernav = styled.div`
   right: 0;
   background: white;
   width: 300px;
-  z-index: 16;
+  z-index: 10;
   list-style: none;
   padding: 20px;
   display: flex;

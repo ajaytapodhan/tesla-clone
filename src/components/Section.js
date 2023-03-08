@@ -35,9 +35,14 @@ const Wrap = styled.div`
   background-image: ${(props) => `url("/images/${props.bgImage}")`};
   display: flex;
   flex-direction: column;
-  justify-content: space-between; //Vertical alignment
-  align-items: center; //Horizontal alignment
+  justify-content: space-between;
+  align-items: center;
+  scroll-snap-align: start;
+  z-index: 1;
 `;
+
+// justify-content: space-between; //Vertical alignment
+//   align-items: center; //Horizontal alignment
 
 const ItemText = styled.div`
   padding-top: 15vh;
