@@ -1,15 +1,18 @@
 import React from "react";
 import styled from "styled-components";
+import Fade from "react-reveal/Fade";
 
 function Section(props) {
   const { title, description, leftButtonText, rightButtonText, backgroundImg } =
     props;
   return (
     <Wrap bgImage={backgroundImg}>
-      <ItemText>
-        <h1>{title}</h1>
-        <p>{description}</p>
-      </ItemText>
+      <Fade bottom>
+        <ItemText>
+          <h1>{title}</h1>
+          <p>{description}</p>
+        </ItemText>
+      </Fade>
       <Buttons>
         <ButtonGroup>
           <LeftButton>{leftButtonText}</LeftButton>
